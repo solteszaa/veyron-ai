@@ -1,0 +1,636 @@
+[
+    {
+        "id": "asst_cIlrW2ycPf8YyelZGEeZGN7n",
+        "created_at": 1741189195,
+        "description": "F\u0151 kommunik\u00e1ci\u00f3s pont a felhaszn\u00e1l\u00f3val, kezeli a teljes folyamatot \u00e9s deleg\u00e1lja a feladatokat.",
+        "instructions": "agency_manifesto.md\n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "Coordinator",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "conversation_manager",
+                    "description": "Eszk\u00f6z a felhaszn\u00e1l\u00f3val folytatott besz\u00e9lget\u00e9s kezel\u00e9s\u00e9re \u00e9s a folyamat \u00e1llapot\u00e1nak k\u00f6vet\u00e9s\u00e9re.\nNyomon k\u00f6veti, hogy mely adatokat gy\u0171jt\u00f6tt\u00fck m\u00e1r be \u00e9s mi hi\u00e1nyzik m\u00e9g.",
+                    "parameters": {
+                        "properties": {
+                            "user_message": {
+                                "description": "A felhaszn\u00e1l\u00f3 legut\u00f3bbi \u00fczenete",
+                                "title": "User Message",
+                                "type": "string"
+                            },
+                            "conversation_state": {
+                                "default": {},
+                                "description": "A besz\u00e9lget\u00e9s jelenlegi \u00e1llapota",
+                                "title": "Conversation State",
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "user_message"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "enum": [
+                                    "PropertyCollector",
+                                    "ImageProcessor",
+                                    "ContentGenerator",
+                                    "WebhookManager"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "PropertyCollector: Ingatlanadatok gy\u0171jt\u00e9s\u00e9re \u00e9s valid\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\nImageProcessor: K\u00e9pek feldolgoz\u00e1s\u00e1ra \u00e9s ImgBB-re val\u00f3 felt\u00f6lt\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.\nContentGenerator: Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\nWebhookManager: A gener\u00e1lt tartalom webhookra val\u00f3 k\u00fcld\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.5,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_nMcgczMDk7zedxaDgvNk1C3J",
+        "created_at": 1741189196,
+        "description": "Ingatlanadatok gy\u0171jt\u00e9s\u00e9re \u00e9s valid\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "agency_manifesto.md\n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "PropertyCollector",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "property_data_validator",
+                    "description": "Eszk\u00f6z az ingatlanadatok valid\u00e1l\u00e1s\u00e1ra \u00e9s struktur\u00e1l\u00e1s\u00e1ra.\nEllen\u0151rzi, hogy minden sz\u00fcks\u00e9ges adat megvan-e \u00e9s megfelel\u0151 form\u00e1tum\u00fa-e.",
+                    "parameters": {
+                        "properties": {
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r",
+                                "title": "Property Data",
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "const": "ContentGenerator",
+                                "enum": [
+                                    "ContentGenerator"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "ContentGenerator: Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.5,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_WO0T5iHYPRLUfhYWsaKHhEmh",
+        "created_at": 1741189197,
+        "description": "K\u00e9pek feldolgoz\u00e1s\u00e1ra \u00e9s ImgBB-re val\u00f3 felt\u00f6lt\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "agency_manifesto.md\n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "ImageProcessor",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "image_batch_processor",
+                    "description": "Eszk\u00f6z t\u00f6bb k\u00e9p egyszerre t\u00f6rt\u00e9n\u0151 feldolgoz\u00e1s\u00e1ra \u00e9s felt\u00f6lt\u00e9s\u00e9re az ImgBB szolg\u00e1ltat\u00e1sra.\nA felt\u00f6lt\u00f6tt k\u00e9pekb\u0151l visszaadja a URL-eket, hogy a social media posztokba beilleszthet\u0151k legyenek.",
+                    "parameters": {
+                        "properties": {
+                            "image_list": {
+                                "description": "Lista, amely tartalmazza a k\u00e9pek adatait (URL-ek vagy base64 k\u00f3dolt adatok)",
+                                "items": {},
+                                "title": "Image List",
+                                "type": "array"
+                            },
+                            "prefix": {
+                                "default": "veyron_property",
+                                "description": "El\u0151tag a k\u00e9pek nev\u00e9hez a felt\u00f6lt\u00e9skor",
+                                "title": "Prefix",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "image_list"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "imgbb_uploader",
+                    "description": "Eszk\u00f6z k\u00e9pek felt\u00f6lt\u00e9s\u00e9re az ImgBB szolg\u00e1ltat\u00e1sra.\nA felt\u00f6lt\u00f6tt k\u00e9pekb\u0151l visszaadja a URL-t, hogy a social media posztokba beilleszthet\u0151 legyen.",
+                    "parameters": {
+                        "properties": {
+                            "image_data": {
+                                "description": "Base64 k\u00f3dolt k\u00e9p adat, vagy a k\u00e9p URL-je",
+                                "title": "Image Data",
+                                "type": "string"
+                            },
+                            "name": {
+                                "default": "veyron_image",
+                                "description": "A felt\u00f6lt\u00f6tt k\u00e9p neve",
+                                "title": "Name",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "image_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "const": "ContentGenerator",
+                                "enum": [
+                                    "ContentGenerator"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "ContentGenerator: Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.5,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_cPWKWXVlzPN1jpveq31r8dwI",
+        "created_at": 1741189197,
+        "description": "Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "agency_manifesto.md\n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "ContentGenerator",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "hashtag_generator",
+                    "description": "Eszk\u00f6z relev\u00e1ns hashtag-ek gener\u00e1l\u00e1s\u00e1ra ingatlan social media posztokhoz.\nL\u00e9trehoz egy list\u00e1t a legjobb hashtag-ekb\u0151l az ingatlan jellemz\u0151i alapj\u00e1n.",
+                    "parameters": {
+                        "properties": {
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r",
+                                "title": "Property Data",
+                                "type": "object"
+                            },
+                            "count": {
+                                "default": 7,
+                                "description": "A gener\u00e1land\u00f3 hashtag-ek sz\u00e1ma",
+                                "title": "Count",
+                                "type": "integer"
+                            },
+                            "language": {
+                                "default": "hungarian",
+                                "description": "A hashtag-ek nyelve (hungarian, english, vagy mixed)",
+                                "title": "Language",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "social_post_generator",
+                    "description": "Eszk\u00f6z professzion\u00e1lis social media posztok gener\u00e1l\u00e1s\u00e1ra luxusingatlanokhoz OpenAI seg\u00edts\u00e9g\u00e9vel.\nA gener\u00e1lt poszt figyelemfelkelt\u0151 sz\u00f6veget, struktur\u00e1lt inform\u00e1ci\u00f3kat \u00e9s hashtag-eket tartalmaz.",
+                    "parameters": {
+                        "properties": {
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r (c\u00edm, \u00e1r, szob\u00e1k sz\u00e1ma, stb.)",
+                                "title": "Property Data",
+                                "type": "object"
+                            },
+                            "image_urls": {
+                                "default": [],
+                                "description": "A felt\u00f6lt\u00f6tt k\u00e9pek URL-jeinek list\u00e1ja",
+                                "items": {},
+                                "title": "Image Urls",
+                                "type": "array"
+                            },
+                            "post_language": {
+                                "default": "hungarian",
+                                "description": "A poszt nyelve (hungarian vagy english)",
+                                "title": "Post Language",
+                                "type": "string"
+                            },
+                            "post_style": {
+                                "default": "elegant",
+                                "description": "A poszt st\u00edlusa (elegant, creative, minimalist, stb.)",
+                                "title": "Post Style",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "const": "WebhookManager",
+                                "enum": [
+                                    "WebhookManager"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "WebhookManager: A gener\u00e1lt tartalom webhookra val\u00f3 k\u00fcld\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.7,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_Nh0S0dkXJuMVfKbzFrDm7xGF",
+        "created_at": 1741189198,
+        "description": "A gener\u00e1lt tartalom webhookra val\u00f3 k\u00fcld\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "agency_manifesto.md\n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "WebhookManager",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "webhook_sender",
+                    "description": "Eszk\u00f6z a gener\u00e1lt social media poszt \u00e9s kapcsol\u00f3d\u00f3 adatok k\u00fcld\u00e9s\u00e9re a Webhookra.",
+                    "parameters": {
+                        "properties": {
+                            "post_content": {
+                                "description": "A gener\u00e1lt social media poszt sz\u00f6vege",
+                                "title": "Post Content",
+                                "type": "string"
+                            },
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r",
+                                "title": "Property Data",
+                                "type": "object"
+                            },
+                            "image_urls": {
+                                "default": [],
+                                "description": "A felt\u00f6lt\u00f6tt k\u00e9pek URL-jeinek list\u00e1ja",
+                                "items": {},
+                                "title": "Image Urls",
+                                "type": "array"
+                            },
+                            "additional_data": {
+                                "default": {},
+                                "description": "Tov\u00e1bbi adatok, amelyeket a webhookra kell k\u00fcldeni",
+                                "title": "Additional Data",
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "post_content",
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.3,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    }
+]

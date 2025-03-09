@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veyron AI Ingatlan Marketing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .chat-box {
+            height: 400px;
+            overflow-y: auto;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .message {
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 80%;
+        }
+        .user-message {
+            background-color: #007bff;
+            color: white;
+            margin-left: auto;
+        }
+        .assistant-message {
+            background-color: #e9ecef;
+            color: #212529;
+            margin-right: auto;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo h1 {
+            color: #007bff;
+            font-size: 28px;
+        }
+        .uploaded-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .image-preview {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .upload-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo mt-3">
+            <h1>Veyron AI Ingatlan Marketing</h1>
+            <p class="text-muted">Professzionális ingatlan posztok generálása egyszerűen</p>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-box" id="chatBox">
+                <div class="message assistant-message">
+                    Üdvözlöm! Miben segíthetek? Ha szeretne egy ingatlan posztot készíteni, kérem írja: "generálj posztot"
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="userInput" class="form-control" placeholder="Írja be az üzenetét...">
+                <button class="btn btn-primary" id="sendButton">Küldés</button>
+            </div>
+            
+            <div class="upload-section">
+                <h5>Képek feltöltése</h5>
+                <p class="text-muted">Válasszon ki egy vagy több képet az ingatlanról</p>
+                
+                <input type="file" id="imageUpload" class="form-control mb-2" accept="image/*">
+                <button class="btn btn-success" id="uploadButton">Kép feltöltése</button>
+                
+                <div class="uploaded-images" id="uploadedImages">
+                    <!-- Itt jelennek meg a feltöltött képek előnézetei -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Üzenet küldése a szerverre
+            function sendMessage() {
+                const message = $('#userInput').val().trim();
+                if (message === '') return;
+                
+                // Felhasználói üzenet megjelenítése
+                appendMessage(message, 'user');
+                $('#userInput').val('');
+                
+                // Thinking üzenet
+                let thinkingMsg = $('<div class="message assistant-message">Gondolkozom...</div>');
+                $('#chatBox').append(thinkingMsg);
+                scrollToBottom();
+                
+                // AJAX kérés a szervernek
+                $.ajax({
+                    url: '/send_message',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ message: message }),
+                    success: function(response) {
+                        // Thinking üzenet eltávolítása
+                        thinkingMsg.remove();
+                        
+                        // Válasz megjelenítése
+                        appendMessage(response.message, 'assistant');
+                    },
+                    error: function(error) {
+                        thinkingMsg.remove();
+                        appendMessage('Hiba történt: ' + (error.responseJSON ? error.responseJSON.error : 'Ismeretlen hiba'), 'assistant');
+                    }
+                });
+            }
+            
+            // Kép feltöltése
+            function uploadImage() {
+                const fileInput = document.getElementById('imageUpload');
+                if (!fileInput.files || fileInput.files.length === 0) {
+                    appendMessage('Kérem, válasszon ki egy képet!', 'assistant');
+                    return;
+                }
+                
+                const formData = new FormData();
+                formData.append('image', fileInput.files[0]);
+                
+                appendMessage('Kép feltöltése folyamatban...', 'assistant');
+                
+                $.ajax({
+                    url: '/upload_image',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        appendMessage('Kép sikeresen feltöltve!', 'assistant');
+                        
+                        // Kép előnézet megjelenítése
+                        $('#uploadedImages').append(`
+                            <img src="${response.display_url}" alt="Feltöltött kép" class="image-preview">
+                        `);
+                        
+                        // Űrlap törlése
+                        fileInput.value = '';
+                    },
+                    error: function(error) {
+                        appendMessage('Hiba a kép feltöltése során: ' + (error.responseJSON ? error.responseJSON.error : 'Ismeretlen hiba'), 'assistant');
+                    }
+                });
+            }
+            
+            // Üzenet hozzáadása a chat dobozhoz
+            function appendMessage(message, sender) {
+                const formattedMessage = formatMessage(message);
+                $('#chatBox').append(`
+                    <div class="message ${sender}-message">
+                        ${formattedMessage}
+                    </div>
+                `);
+                scrollToBottom();
+            }
+            
+            // Üzenet formázása (sortörések és emojik megtartása)
+            function formatMessage(message) {
+                return message.replace(/\n/g, '<br>').replace(/
+/g, '<br>');
+            }
+            
+            // Görgetés a chat doboz aljára
+            function scrollToBottom() {
+                const chatBox = document.getElementById('chatBox');
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+            
+            // Event listeners
+            $('#sendButton').click(sendMessage);
+            $('#userInput').keypress(function(e) {
+                if(e.which === 13) {
+                    sendMessage();
+                }
+            });
+            $('#uploadButton').click(uploadImage);
+        });
+    </script>
+</body>
+</html>

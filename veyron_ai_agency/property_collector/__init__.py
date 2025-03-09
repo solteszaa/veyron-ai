@@ -1,0 +1,1 @@
+from property_collector.property_collector import PropertyCollector 

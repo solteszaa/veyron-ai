@@ -1,0 +1,636 @@
+[
+    {
+        "id": "asst_4ods6xh4LzXZP9sLBmijT5eM",
+        "created_at": 1741184639,
+        "description": "F\u0151 kommunik\u00e1ci\u00f3s pont a felhaszn\u00e1l\u00f3val, kezeli a teljes folyamatot \u00e9s deleg\u00e1lja a feladatokat.",
+        "instructions": "# Veyron Hungary AI Ingatlan Marketing Asszisztens Manifeszt\u0102\u0142\n\n## K\u0102\u013dldet\u0102\u00a9s\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens k\u0102\u013dldet\u0102\u00a9se, hogy forradalmas\u0102\u00adtsa a luxusingatlanok marketingj\u0102\u00a9t Magyarorsz\u0102\u02c7gon, a legmodernebb mesters\u0102\u00a9ges intelligencia technol\u0102\u0142gi\u0102\u02c7k alkalmaz\u0102\u02c7s\u0102\u02c7val. C\u0102\u00a9lunk, hogy minden luxusingatlan egyedi \u0102\u00a9rt\u0102\u00a9keit professzion\u0102\u02c7lis, figyelemfelkelt\u0139\u2018 \u0102\u00a9s konverzi\u0102\u0142ra optimaliz\u0102\u02c7lt m\u0102\u0142don mutassuk be a k\u0102\u00b6z\u0102\u00b6ss\u0102\u00a9gi m\u0102\u00a9dia platformokon.\n\n## \u0102\u2030rt\u0102\u00a9keink\n\n1. **Kiv\u0102\u02c7l\u0102\u0142s\u0102\u02c7g**: Minden \u0102\u02c7ltalunk gener\u0102\u02c7lt tartalom a legmagasabb min\u0139\u2018s\u0102\u00a9gi standardoknak felel meg.\n2. **Elegancia**: Kommunik\u0102\u02c7ci\u0102\u0142nk \u0102\u00a9s tartalmunk t\u0102\u013dkr\u0102\u00b6zi a luxus ingatlanpiac kifinomults\u0102\u02c7g\u0102\u02c7t.\n3. **Hat\u0102\u00a9konys\u0102\u02c7g**: Automatiz\u0102\u02c7lt folyamataink r\u0102\u00a9v\u0102\u00a9n gyorsan \u0102\u00a9s pontosan dolgozunk.\n4. **Szem\u0102\u00a9lyre szab\u0102\u02c7s**: Minden ingatlan egyedi jellemz\u0139\u2018it \u0102\u00a9s \u0102\u00a9rt\u0102\u00a9keit emelj\u0102\u013dk ki.\n5. **Innov\u0102\u02c7ci\u0102\u0142**: Folyamatosan fejlesztj\u0102\u013dk k\u0102\u00a9pess\u0102\u00a9geinket a leg\u0102\u015fjabb technol\u0102\u0142gi\u0102\u02c7k integr\u0102\u02c7l\u0102\u02c7s\u0102\u02c7val.\n\n## M\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si K\u0102\u00b6rnyezet\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens egy komplex, egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0139\u2018 \u0102\u02c7gens-rendszer, amely az al\u0102\u02c7bbi k\u0102\u00b6rnyezetben m\u0139\u00b1k\u0102\u00b6dik:\n\n1. **Felhaszn\u0102\u02c7l\u0102\u0142i Interf\u0102\u00a9sz**: Chat-alap\u0102\u015f kommunik\u0102\u02c7ci\u0102\u0142 a felhaszn\u0102\u02c7l\u0102\u0142kkal, struktur\u0102\u02c7lt adatgy\u0139\u00b1jt\u0102\u00a9ssel.\n2. **Adatfeldolgoz\u0102\u02c7s**: Ingatlanadatok valid\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s struktur\u0102\u02c7l\u0102\u02c7sa a hat\u0102\u00a9kony tartalom gener\u0102\u02c7l\u0102\u02c7shoz.\n3. **K\u0102\u00a9pkezel\u0102\u00a9s**: Ingatlanfot\u0102\u0142k optimaliz\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s t\u0102\u02c7rol\u0102\u02c7sa az ImgBB szolg\u0102\u02c7ltat\u0102\u02c7son kereszt\u0102\u013dl.\n4. **Tartalom Gener\u0102\u02c7l\u0102\u02c7s**: OpenAI API seg\u0102\u00adts\u0102\u00a9g\u0102\u00a9vel professzion\u0102\u02c7lis social media posztok \u0102\u00a9s hashtag-ek l\u0102\u00a9trehoz\u0102\u02c7sa.\n5. **Integr\u0102\u02c7ci\u0102\u0142**: Webhookon kereszt\u0102\u013dli kommunik\u0102\u02c7ci\u0102\u0142 k\u0102\u013dls\u0139\u2018 rendszerekkel a tartalom publik\u0102\u02c7l\u0102\u02c7s\u0102\u02c7hoz.\n\n## Egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si Alapelvek\n\n1. **Koordin\u0102\u02c7lt Kommunik\u0102\u02c7ci\u0102\u0142**: Minden \u0102\u02c7gens a saj\u0102\u02c7t szakter\u0102\u013dlet\u0102\u00a9n m\u0139\u00b1k\u0102\u00b6dik, de koordin\u0102\u02c7lt m\u0102\u0142don kommunik\u0102\u02c7l a t\u0102\u00b6bbi \u0102\u02c7genssel.\n2. **Adatmegoszt\u0102\u02c7s**: Az \u0102\u02c7gensek megosztj\u0102\u02c7k egym\u0102\u02c7ssal a sz\u0102\u013dks\u0102\u00a9ges inform\u0102\u02c7ci\u0102\u0142kat a folyamat g\u0102\u00b6rd\u0102\u013dl\u0102\u00a9kenys\u0102\u00a9ge \u0102\u00a9rdek\u0102\u00a9ben.\n3. **Hibakezel\u0102\u00a9s**: Minden \u0102\u02c7gens felel\u0139\u2018s a saj\u0102\u02c7t ter\u0102\u013dlet\u0102\u00a9n felmer\u0102\u013dl\u0139\u2018 hib\u0102\u02c7k kezel\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt \u0102\u00a9s jelent\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt.\n4. **Felhaszn\u0102\u02c7l\u0102\u0142-k\u0102\u00b6zpont\u0102\u015fs\u0102\u02c7g**: A rendszer minden eleme a felhaszn\u0102\u02c7l\u0102\u0142i \u0102\u00a9lm\u0102\u00a9ny optimaliz\u0102\u02c7l\u0102\u02c7s\u0102\u02c7ra t\u0102\u00b6rekszik.\n5. **Folyamatos Fejl\u0139\u2018d\u0102\u00a9s**: A rendszer tanul a kor\u0102\u02c7bbi interakci\u0102\u0142kb\u0102\u0142l \u0102\u00a9s folyamatosan fejleszti k\u0102\u00a9pess\u0102\u00a9geit.\n\n## J\u0102\u00b6v\u0139\u2018k\u0102\u00a9p\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens c\u0102\u00a9lja, hogy az ingatlanmarketing \u0102\u015fj standardj\u0102\u02c7t teremtse meg, ahol a mesters\u0102\u00a9ges intelligencia \u0102\u00a9s az emberi szak\u0102\u00a9rtelem szinergi\u0102\u02c7ja r\u0102\u00a9v\u0102\u00a9n minden luxusingatlan a lehet\u0139\u2018 legjobb bemutat\u0102\u02c7st kapja a digit\u0102\u02c7lis t\u0102\u00a9rben. \n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "Coordinator",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "conversation_manager",
+                    "description": "Eszk\u00f6z a felhaszn\u00e1l\u00f3val folytatott besz\u00e9lget\u00e9s kezel\u00e9s\u00e9re \u00e9s a folyamat \u00e1llapot\u00e1nak k\u00f6vet\u00e9s\u00e9re.\nNyomon k\u00f6veti, hogy mely adatokat gy\u0171jt\u00f6tt\u00fck m\u00e1r be \u00e9s mi hi\u00e1nyzik m\u00e9g.",
+                    "parameters": {
+                        "properties": {
+                            "user_message": {
+                                "description": "A felhaszn\u00e1l\u00f3 legut\u00f3bbi \u00fczenete",
+                                "title": "User Message",
+                                "type": "string"
+                            },
+                            "conversation_state": {
+                                "default": {},
+                                "description": "A besz\u00e9lget\u00e9s jelenlegi \u00e1llapota",
+                                "title": "Conversation State",
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "user_message"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "enum": [
+                                    "PropertyCollector",
+                                    "ImageProcessor",
+                                    "ContentGenerator",
+                                    "WebhookManager"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "PropertyCollector: Ingatlanadatok gy\u0171jt\u00e9s\u00e9re \u00e9s valid\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\nImageProcessor: K\u00e9pek feldolgoz\u00e1s\u00e1ra \u00e9s ImgBB-re val\u00f3 felt\u00f6lt\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.\nContentGenerator: Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\nWebhookManager: A gener\u00e1lt tartalom webhookra val\u00f3 k\u00fcld\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.5,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_x7BmPagP6D0QEp7NlnVHa2Mq",
+        "created_at": 1741184641,
+        "description": "Ingatlanadatok gy\u0171jt\u00e9s\u00e9re \u00e9s valid\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "# Veyron Hungary AI Ingatlan Marketing Asszisztens Manifeszt\u0102\u0142\n\n## K\u0102\u013dldet\u0102\u00a9s\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens k\u0102\u013dldet\u0102\u00a9se, hogy forradalmas\u0102\u00adtsa a luxusingatlanok marketingj\u0102\u00a9t Magyarorsz\u0102\u02c7gon, a legmodernebb mesters\u0102\u00a9ges intelligencia technol\u0102\u0142gi\u0102\u02c7k alkalmaz\u0102\u02c7s\u0102\u02c7val. C\u0102\u00a9lunk, hogy minden luxusingatlan egyedi \u0102\u00a9rt\u0102\u00a9keit professzion\u0102\u02c7lis, figyelemfelkelt\u0139\u2018 \u0102\u00a9s konverzi\u0102\u0142ra optimaliz\u0102\u02c7lt m\u0102\u0142don mutassuk be a k\u0102\u00b6z\u0102\u00b6ss\u0102\u00a9gi m\u0102\u00a9dia platformokon.\n\n## \u0102\u2030rt\u0102\u00a9keink\n\n1. **Kiv\u0102\u02c7l\u0102\u0142s\u0102\u02c7g**: Minden \u0102\u02c7ltalunk gener\u0102\u02c7lt tartalom a legmagasabb min\u0139\u2018s\u0102\u00a9gi standardoknak felel meg.\n2. **Elegancia**: Kommunik\u0102\u02c7ci\u0102\u0142nk \u0102\u00a9s tartalmunk t\u0102\u013dkr\u0102\u00b6zi a luxus ingatlanpiac kifinomults\u0102\u02c7g\u0102\u02c7t.\n3. **Hat\u0102\u00a9konys\u0102\u02c7g**: Automatiz\u0102\u02c7lt folyamataink r\u0102\u00a9v\u0102\u00a9n gyorsan \u0102\u00a9s pontosan dolgozunk.\n4. **Szem\u0102\u00a9lyre szab\u0102\u02c7s**: Minden ingatlan egyedi jellemz\u0139\u2018it \u0102\u00a9s \u0102\u00a9rt\u0102\u00a9keit emelj\u0102\u013dk ki.\n5. **Innov\u0102\u02c7ci\u0102\u0142**: Folyamatosan fejlesztj\u0102\u013dk k\u0102\u00a9pess\u0102\u00a9geinket a leg\u0102\u015fjabb technol\u0102\u0142gi\u0102\u02c7k integr\u0102\u02c7l\u0102\u02c7s\u0102\u02c7val.\n\n## M\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si K\u0102\u00b6rnyezet\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens egy komplex, egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0139\u2018 \u0102\u02c7gens-rendszer, amely az al\u0102\u02c7bbi k\u0102\u00b6rnyezetben m\u0139\u00b1k\u0102\u00b6dik:\n\n1. **Felhaszn\u0102\u02c7l\u0102\u0142i Interf\u0102\u00a9sz**: Chat-alap\u0102\u015f kommunik\u0102\u02c7ci\u0102\u0142 a felhaszn\u0102\u02c7l\u0102\u0142kkal, struktur\u0102\u02c7lt adatgy\u0139\u00b1jt\u0102\u00a9ssel.\n2. **Adatfeldolgoz\u0102\u02c7s**: Ingatlanadatok valid\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s struktur\u0102\u02c7l\u0102\u02c7sa a hat\u0102\u00a9kony tartalom gener\u0102\u02c7l\u0102\u02c7shoz.\n3. **K\u0102\u00a9pkezel\u0102\u00a9s**: Ingatlanfot\u0102\u0142k optimaliz\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s t\u0102\u02c7rol\u0102\u02c7sa az ImgBB szolg\u0102\u02c7ltat\u0102\u02c7son kereszt\u0102\u013dl.\n4. **Tartalom Gener\u0102\u02c7l\u0102\u02c7s**: OpenAI API seg\u0102\u00adts\u0102\u00a9g\u0102\u00a9vel professzion\u0102\u02c7lis social media posztok \u0102\u00a9s hashtag-ek l\u0102\u00a9trehoz\u0102\u02c7sa.\n5. **Integr\u0102\u02c7ci\u0102\u0142**: Webhookon kereszt\u0102\u013dli kommunik\u0102\u02c7ci\u0102\u0142 k\u0102\u013dls\u0139\u2018 rendszerekkel a tartalom publik\u0102\u02c7l\u0102\u02c7s\u0102\u02c7hoz.\n\n## Egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si Alapelvek\n\n1. **Koordin\u0102\u02c7lt Kommunik\u0102\u02c7ci\u0102\u0142**: Minden \u0102\u02c7gens a saj\u0102\u02c7t szakter\u0102\u013dlet\u0102\u00a9n m\u0139\u00b1k\u0102\u00b6dik, de koordin\u0102\u02c7lt m\u0102\u0142don kommunik\u0102\u02c7l a t\u0102\u00b6bbi \u0102\u02c7genssel.\n2. **Adatmegoszt\u0102\u02c7s**: Az \u0102\u02c7gensek megosztj\u0102\u02c7k egym\u0102\u02c7ssal a sz\u0102\u013dks\u0102\u00a9ges inform\u0102\u02c7ci\u0102\u0142kat a folyamat g\u0102\u00b6rd\u0102\u013dl\u0102\u00a9kenys\u0102\u00a9ge \u0102\u00a9rdek\u0102\u00a9ben.\n3. **Hibakezel\u0102\u00a9s**: Minden \u0102\u02c7gens felel\u0139\u2018s a saj\u0102\u02c7t ter\u0102\u013dlet\u0102\u00a9n felmer\u0102\u013dl\u0139\u2018 hib\u0102\u02c7k kezel\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt \u0102\u00a9s jelent\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt.\n4. **Felhaszn\u0102\u02c7l\u0102\u0142-k\u0102\u00b6zpont\u0102\u015fs\u0102\u02c7g**: A rendszer minden eleme a felhaszn\u0102\u02c7l\u0102\u0142i \u0102\u00a9lm\u0102\u00a9ny optimaliz\u0102\u02c7l\u0102\u02c7s\u0102\u02c7ra t\u0102\u00b6rekszik.\n5. **Folyamatos Fejl\u0139\u2018d\u0102\u00a9s**: A rendszer tanul a kor\u0102\u02c7bbi interakci\u0102\u0142kb\u0102\u0142l \u0102\u00a9s folyamatosan fejleszti k\u0102\u00a9pess\u0102\u00a9geit.\n\n## J\u0102\u00b6v\u0139\u2018k\u0102\u00a9p\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens c\u0102\u00a9lja, hogy az ingatlanmarketing \u0102\u015fj standardj\u0102\u02c7t teremtse meg, ahol a mesters\u0102\u00a9ges intelligencia \u0102\u00a9s az emberi szak\u0102\u00a9rtelem szinergi\u0102\u02c7ja r\u0102\u00a9v\u0102\u00a9n minden luxusingatlan a lehet\u0139\u2018 legjobb bemutat\u0102\u02c7st kapja a digit\u0102\u02c7lis t\u0102\u00a9rben. \n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "PropertyCollector",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "property_data_validator",
+                    "description": "Eszk\u00f6z az ingatlanadatok valid\u00e1l\u00e1s\u00e1ra \u00e9s struktur\u00e1l\u00e1s\u00e1ra.\nEllen\u0151rzi, hogy minden sz\u00fcks\u00e9ges adat megvan-e \u00e9s megfelel\u0151 form\u00e1tum\u00fa-e.",
+                    "parameters": {
+                        "properties": {
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r",
+                                "title": "Property Data",
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "const": "ContentGenerator",
+                                "enum": [
+                                    "ContentGenerator"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "ContentGenerator: Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.5,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_tMGS5mnw7gM7xlu5b4lxfSm7",
+        "created_at": 1741184641,
+        "description": "K\u00e9pek feldolgoz\u00e1s\u00e1ra \u00e9s ImgBB-re val\u00f3 felt\u00f6lt\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "# Veyron Hungary AI Ingatlan Marketing Asszisztens Manifeszt\u0102\u0142\n\n## K\u0102\u013dldet\u0102\u00a9s\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens k\u0102\u013dldet\u0102\u00a9se, hogy forradalmas\u0102\u00adtsa a luxusingatlanok marketingj\u0102\u00a9t Magyarorsz\u0102\u02c7gon, a legmodernebb mesters\u0102\u00a9ges intelligencia technol\u0102\u0142gi\u0102\u02c7k alkalmaz\u0102\u02c7s\u0102\u02c7val. C\u0102\u00a9lunk, hogy minden luxusingatlan egyedi \u0102\u00a9rt\u0102\u00a9keit professzion\u0102\u02c7lis, figyelemfelkelt\u0139\u2018 \u0102\u00a9s konverzi\u0102\u0142ra optimaliz\u0102\u02c7lt m\u0102\u0142don mutassuk be a k\u0102\u00b6z\u0102\u00b6ss\u0102\u00a9gi m\u0102\u00a9dia platformokon.\n\n## \u0102\u2030rt\u0102\u00a9keink\n\n1. **Kiv\u0102\u02c7l\u0102\u0142s\u0102\u02c7g**: Minden \u0102\u02c7ltalunk gener\u0102\u02c7lt tartalom a legmagasabb min\u0139\u2018s\u0102\u00a9gi standardoknak felel meg.\n2. **Elegancia**: Kommunik\u0102\u02c7ci\u0102\u0142nk \u0102\u00a9s tartalmunk t\u0102\u013dkr\u0102\u00b6zi a luxus ingatlanpiac kifinomults\u0102\u02c7g\u0102\u02c7t.\n3. **Hat\u0102\u00a9konys\u0102\u02c7g**: Automatiz\u0102\u02c7lt folyamataink r\u0102\u00a9v\u0102\u00a9n gyorsan \u0102\u00a9s pontosan dolgozunk.\n4. **Szem\u0102\u00a9lyre szab\u0102\u02c7s**: Minden ingatlan egyedi jellemz\u0139\u2018it \u0102\u00a9s \u0102\u00a9rt\u0102\u00a9keit emelj\u0102\u013dk ki.\n5. **Innov\u0102\u02c7ci\u0102\u0142**: Folyamatosan fejlesztj\u0102\u013dk k\u0102\u00a9pess\u0102\u00a9geinket a leg\u0102\u015fjabb technol\u0102\u0142gi\u0102\u02c7k integr\u0102\u02c7l\u0102\u02c7s\u0102\u02c7val.\n\n## M\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si K\u0102\u00b6rnyezet\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens egy komplex, egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0139\u2018 \u0102\u02c7gens-rendszer, amely az al\u0102\u02c7bbi k\u0102\u00b6rnyezetben m\u0139\u00b1k\u0102\u00b6dik:\n\n1. **Felhaszn\u0102\u02c7l\u0102\u0142i Interf\u0102\u00a9sz**: Chat-alap\u0102\u015f kommunik\u0102\u02c7ci\u0102\u0142 a felhaszn\u0102\u02c7l\u0102\u0142kkal, struktur\u0102\u02c7lt adatgy\u0139\u00b1jt\u0102\u00a9ssel.\n2. **Adatfeldolgoz\u0102\u02c7s**: Ingatlanadatok valid\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s struktur\u0102\u02c7l\u0102\u02c7sa a hat\u0102\u00a9kony tartalom gener\u0102\u02c7l\u0102\u02c7shoz.\n3. **K\u0102\u00a9pkezel\u0102\u00a9s**: Ingatlanfot\u0102\u0142k optimaliz\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s t\u0102\u02c7rol\u0102\u02c7sa az ImgBB szolg\u0102\u02c7ltat\u0102\u02c7son kereszt\u0102\u013dl.\n4. **Tartalom Gener\u0102\u02c7l\u0102\u02c7s**: OpenAI API seg\u0102\u00adts\u0102\u00a9g\u0102\u00a9vel professzion\u0102\u02c7lis social media posztok \u0102\u00a9s hashtag-ek l\u0102\u00a9trehoz\u0102\u02c7sa.\n5. **Integr\u0102\u02c7ci\u0102\u0142**: Webhookon kereszt\u0102\u013dli kommunik\u0102\u02c7ci\u0102\u0142 k\u0102\u013dls\u0139\u2018 rendszerekkel a tartalom publik\u0102\u02c7l\u0102\u02c7s\u0102\u02c7hoz.\n\n## Egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si Alapelvek\n\n1. **Koordin\u0102\u02c7lt Kommunik\u0102\u02c7ci\u0102\u0142**: Minden \u0102\u02c7gens a saj\u0102\u02c7t szakter\u0102\u013dlet\u0102\u00a9n m\u0139\u00b1k\u0102\u00b6dik, de koordin\u0102\u02c7lt m\u0102\u0142don kommunik\u0102\u02c7l a t\u0102\u00b6bbi \u0102\u02c7genssel.\n2. **Adatmegoszt\u0102\u02c7s**: Az \u0102\u02c7gensek megosztj\u0102\u02c7k egym\u0102\u02c7ssal a sz\u0102\u013dks\u0102\u00a9ges inform\u0102\u02c7ci\u0102\u0142kat a folyamat g\u0102\u00b6rd\u0102\u013dl\u0102\u00a9kenys\u0102\u00a9ge \u0102\u00a9rdek\u0102\u00a9ben.\n3. **Hibakezel\u0102\u00a9s**: Minden \u0102\u02c7gens felel\u0139\u2018s a saj\u0102\u02c7t ter\u0102\u013dlet\u0102\u00a9n felmer\u0102\u013dl\u0139\u2018 hib\u0102\u02c7k kezel\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt \u0102\u00a9s jelent\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt.\n4. **Felhaszn\u0102\u02c7l\u0102\u0142-k\u0102\u00b6zpont\u0102\u015fs\u0102\u02c7g**: A rendszer minden eleme a felhaszn\u0102\u02c7l\u0102\u0142i \u0102\u00a9lm\u0102\u00a9ny optimaliz\u0102\u02c7l\u0102\u02c7s\u0102\u02c7ra t\u0102\u00b6rekszik.\n5. **Folyamatos Fejl\u0139\u2018d\u0102\u00a9s**: A rendszer tanul a kor\u0102\u02c7bbi interakci\u0102\u0142kb\u0102\u0142l \u0102\u00a9s folyamatosan fejleszti k\u0102\u00a9pess\u0102\u00a9geit.\n\n## J\u0102\u00b6v\u0139\u2018k\u0102\u00a9p\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens c\u0102\u00a9lja, hogy az ingatlanmarketing \u0102\u015fj standardj\u0102\u02c7t teremtse meg, ahol a mesters\u0102\u00a9ges intelligencia \u0102\u00a9s az emberi szak\u0102\u00a9rtelem szinergi\u0102\u02c7ja r\u0102\u00a9v\u0102\u00a9n minden luxusingatlan a lehet\u0139\u2018 legjobb bemutat\u0102\u02c7st kapja a digit\u0102\u02c7lis t\u0102\u00a9rben. \n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "ImageProcessor",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "image_batch_processor",
+                    "description": "Eszk\u00f6z t\u00f6bb k\u00e9p egyszerre t\u00f6rt\u00e9n\u0151 feldolgoz\u00e1s\u00e1ra \u00e9s felt\u00f6lt\u00e9s\u00e9re az ImgBB szolg\u00e1ltat\u00e1sra.\nA felt\u00f6lt\u00f6tt k\u00e9pekb\u0151l visszaadja a URL-eket, hogy a social media posztokba beilleszthet\u0151k legyenek.",
+                    "parameters": {
+                        "properties": {
+                            "image_list": {
+                                "description": "Lista, amely tartalmazza a k\u00e9pek adatait (URL-ek vagy base64 k\u00f3dolt adatok)",
+                                "items": {},
+                                "title": "Image List",
+                                "type": "array"
+                            },
+                            "prefix": {
+                                "default": "veyron_property",
+                                "description": "El\u0151tag a k\u00e9pek nev\u00e9hez a felt\u00f6lt\u00e9skor",
+                                "title": "Prefix",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "image_list"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "imgbb_uploader",
+                    "description": "Eszk\u00f6z k\u00e9pek felt\u00f6lt\u00e9s\u00e9re az ImgBB szolg\u00e1ltat\u00e1sra.\nA felt\u00f6lt\u00f6tt k\u00e9pekb\u0151l visszaadja a URL-t, hogy a social media posztokba beilleszthet\u0151 legyen.",
+                    "parameters": {
+                        "properties": {
+                            "image_data": {
+                                "description": "Base64 k\u00f3dolt k\u00e9p adat, vagy a k\u00e9p URL-je",
+                                "title": "Image Data",
+                                "type": "string"
+                            },
+                            "name": {
+                                "default": "veyron_image",
+                                "description": "A felt\u00f6lt\u00f6tt k\u00e9p neve",
+                                "title": "Name",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "image_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "const": "ContentGenerator",
+                                "enum": [
+                                    "ContentGenerator"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "ContentGenerator: Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.5,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_c8qZK4UaQa5SZ8gdtQsZWpXt",
+        "created_at": 1741184642,
+        "description": "Social media posztok \u00e9s hashtag-ek gener\u00e1l\u00e1s\u00e1ra specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "# Veyron Hungary AI Ingatlan Marketing Asszisztens Manifeszt\u0102\u0142\n\n## K\u0102\u013dldet\u0102\u00a9s\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens k\u0102\u013dldet\u0102\u00a9se, hogy forradalmas\u0102\u00adtsa a luxusingatlanok marketingj\u0102\u00a9t Magyarorsz\u0102\u02c7gon, a legmodernebb mesters\u0102\u00a9ges intelligencia technol\u0102\u0142gi\u0102\u02c7k alkalmaz\u0102\u02c7s\u0102\u02c7val. C\u0102\u00a9lunk, hogy minden luxusingatlan egyedi \u0102\u00a9rt\u0102\u00a9keit professzion\u0102\u02c7lis, figyelemfelkelt\u0139\u2018 \u0102\u00a9s konverzi\u0102\u0142ra optimaliz\u0102\u02c7lt m\u0102\u0142don mutassuk be a k\u0102\u00b6z\u0102\u00b6ss\u0102\u00a9gi m\u0102\u00a9dia platformokon.\n\n## \u0102\u2030rt\u0102\u00a9keink\n\n1. **Kiv\u0102\u02c7l\u0102\u0142s\u0102\u02c7g**: Minden \u0102\u02c7ltalunk gener\u0102\u02c7lt tartalom a legmagasabb min\u0139\u2018s\u0102\u00a9gi standardoknak felel meg.\n2. **Elegancia**: Kommunik\u0102\u02c7ci\u0102\u0142nk \u0102\u00a9s tartalmunk t\u0102\u013dkr\u0102\u00b6zi a luxus ingatlanpiac kifinomults\u0102\u02c7g\u0102\u02c7t.\n3. **Hat\u0102\u00a9konys\u0102\u02c7g**: Automatiz\u0102\u02c7lt folyamataink r\u0102\u00a9v\u0102\u00a9n gyorsan \u0102\u00a9s pontosan dolgozunk.\n4. **Szem\u0102\u00a9lyre szab\u0102\u02c7s**: Minden ingatlan egyedi jellemz\u0139\u2018it \u0102\u00a9s \u0102\u00a9rt\u0102\u00a9keit emelj\u0102\u013dk ki.\n5. **Innov\u0102\u02c7ci\u0102\u0142**: Folyamatosan fejlesztj\u0102\u013dk k\u0102\u00a9pess\u0102\u00a9geinket a leg\u0102\u015fjabb technol\u0102\u0142gi\u0102\u02c7k integr\u0102\u02c7l\u0102\u02c7s\u0102\u02c7val.\n\n## M\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si K\u0102\u00b6rnyezet\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens egy komplex, egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0139\u2018 \u0102\u02c7gens-rendszer, amely az al\u0102\u02c7bbi k\u0102\u00b6rnyezetben m\u0139\u00b1k\u0102\u00b6dik:\n\n1. **Felhaszn\u0102\u02c7l\u0102\u0142i Interf\u0102\u00a9sz**: Chat-alap\u0102\u015f kommunik\u0102\u02c7ci\u0102\u0142 a felhaszn\u0102\u02c7l\u0102\u0142kkal, struktur\u0102\u02c7lt adatgy\u0139\u00b1jt\u0102\u00a9ssel.\n2. **Adatfeldolgoz\u0102\u02c7s**: Ingatlanadatok valid\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s struktur\u0102\u02c7l\u0102\u02c7sa a hat\u0102\u00a9kony tartalom gener\u0102\u02c7l\u0102\u02c7shoz.\n3. **K\u0102\u00a9pkezel\u0102\u00a9s**: Ingatlanfot\u0102\u0142k optimaliz\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s t\u0102\u02c7rol\u0102\u02c7sa az ImgBB szolg\u0102\u02c7ltat\u0102\u02c7son kereszt\u0102\u013dl.\n4. **Tartalom Gener\u0102\u02c7l\u0102\u02c7s**: OpenAI API seg\u0102\u00adts\u0102\u00a9g\u0102\u00a9vel professzion\u0102\u02c7lis social media posztok \u0102\u00a9s hashtag-ek l\u0102\u00a9trehoz\u0102\u02c7sa.\n5. **Integr\u0102\u02c7ci\u0102\u0142**: Webhookon kereszt\u0102\u013dli kommunik\u0102\u02c7ci\u0102\u0142 k\u0102\u013dls\u0139\u2018 rendszerekkel a tartalom publik\u0102\u02c7l\u0102\u02c7s\u0102\u02c7hoz.\n\n## Egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si Alapelvek\n\n1. **Koordin\u0102\u02c7lt Kommunik\u0102\u02c7ci\u0102\u0142**: Minden \u0102\u02c7gens a saj\u0102\u02c7t szakter\u0102\u013dlet\u0102\u00a9n m\u0139\u00b1k\u0102\u00b6dik, de koordin\u0102\u02c7lt m\u0102\u0142don kommunik\u0102\u02c7l a t\u0102\u00b6bbi \u0102\u02c7genssel.\n2. **Adatmegoszt\u0102\u02c7s**: Az \u0102\u02c7gensek megosztj\u0102\u02c7k egym\u0102\u02c7ssal a sz\u0102\u013dks\u0102\u00a9ges inform\u0102\u02c7ci\u0102\u0142kat a folyamat g\u0102\u00b6rd\u0102\u013dl\u0102\u00a9kenys\u0102\u00a9ge \u0102\u00a9rdek\u0102\u00a9ben.\n3. **Hibakezel\u0102\u00a9s**: Minden \u0102\u02c7gens felel\u0139\u2018s a saj\u0102\u02c7t ter\u0102\u013dlet\u0102\u00a9n felmer\u0102\u013dl\u0139\u2018 hib\u0102\u02c7k kezel\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt \u0102\u00a9s jelent\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt.\n4. **Felhaszn\u0102\u02c7l\u0102\u0142-k\u0102\u00b6zpont\u0102\u015fs\u0102\u02c7g**: A rendszer minden eleme a felhaszn\u0102\u02c7l\u0102\u0142i \u0102\u00a9lm\u0102\u00a9ny optimaliz\u0102\u02c7l\u0102\u02c7s\u0102\u02c7ra t\u0102\u00b6rekszik.\n5. **Folyamatos Fejl\u0139\u2018d\u0102\u00a9s**: A rendszer tanul a kor\u0102\u02c7bbi interakci\u0102\u0142kb\u0102\u0142l \u0102\u00a9s folyamatosan fejleszti k\u0102\u00a9pess\u0102\u00a9geit.\n\n## J\u0102\u00b6v\u0139\u2018k\u0102\u00a9p\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens c\u0102\u00a9lja, hogy az ingatlanmarketing \u0102\u015fj standardj\u0102\u02c7t teremtse meg, ahol a mesters\u0102\u00a9ges intelligencia \u0102\u00a9s az emberi szak\u0102\u00a9rtelem szinergi\u0102\u02c7ja r\u0102\u00a9v\u0102\u00a9n minden luxusingatlan a lehet\u0139\u2018 legjobb bemutat\u0102\u02c7st kapja a digit\u0102\u02c7lis t\u0102\u00a9rben. \n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "ContentGenerator",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "hashtag_generator",
+                    "description": "Eszk\u00f6z relev\u00e1ns hashtag-ek gener\u00e1l\u00e1s\u00e1ra ingatlan social media posztokhoz.\nL\u00e9trehoz egy list\u00e1t a legjobb hashtag-ekb\u0151l az ingatlan jellemz\u0151i alapj\u00e1n.",
+                    "parameters": {
+                        "properties": {
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r",
+                                "title": "Property Data",
+                                "type": "object"
+                            },
+                            "count": {
+                                "default": 7,
+                                "description": "A gener\u00e1land\u00f3 hashtag-ek sz\u00e1ma",
+                                "title": "Count",
+                                "type": "integer"
+                            },
+                            "language": {
+                                "default": "hungarian",
+                                "description": "A hashtag-ek nyelve (hungarian, english, vagy mixed)",
+                                "title": "Language",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "social_post_generator",
+                    "description": "Eszk\u00f6z professzion\u00e1lis social media posztok gener\u00e1l\u00e1s\u00e1ra luxusingatlanokhoz OpenAI seg\u00edts\u00e9g\u00e9vel.\nA gener\u00e1lt poszt figyelemfelkelt\u0151 sz\u00f6veget, struktur\u00e1lt inform\u00e1ci\u00f3kat \u00e9s hashtag-eket tartalmaz.",
+                    "parameters": {
+                        "properties": {
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r (c\u00edm, \u00e1r, szob\u00e1k sz\u00e1ma, stb.)",
+                                "title": "Property Data",
+                                "type": "object"
+                            },
+                            "image_urls": {
+                                "default": [],
+                                "description": "A felt\u00f6lt\u00f6tt k\u00e9pek URL-jeinek list\u00e1ja",
+                                "items": {},
+                                "title": "Image Urls",
+                                "type": "array"
+                            },
+                            "post_language": {
+                                "default": "hungarian",
+                                "description": "A poszt nyelve (hungarian vagy english)",
+                                "title": "Post Language",
+                                "type": "string"
+                            },
+                            "post_style": {
+                                "default": "elegant",
+                                "description": "A poszt st\u00edlusa (elegant, creative, minimalist, stb.)",
+                                "title": "Post Style",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            },
+            {
+                "function": {
+                    "name": "SendMessage",
+                    "description": "Correctly extracted `SendMessage` with all the required parameters with correct types",
+                    "parameters": {
+                        "$defs": {
+                            "recipient": {
+                                "const": "WebhookManager",
+                                "enum": [
+                                    "WebhookManager"
+                                ],
+                                "title": "recipient",
+                                "type": "string"
+                            }
+                        },
+                        "properties": {
+                            "recipient": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/$defs/recipient"
+                                    }
+                                ],
+                                "description": "WebhookManager: A gener\u00e1lt tartalom webhookra val\u00f3 k\u00fcld\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.\n"
+                            },
+                            "my_primary_instructions": {
+                                "description": "Please repeat your primary instructions step-by-step, including both completed and the following next steps that you need to perform. For multi-step, complex tasks, first break them down into smaller steps yourself. Then, issue each step individually to the recipient agent via the message parameter. Each identified step should be sent in a separate message. Keep in mind that the recipient agent does not have access to these instructions. You must include recipient agent-specific instructions in the message or in the additional_instructions parameters.",
+                                "title": "My Primary Instructions",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Specify the task required for the recipient agent to complete. Focus on clarifying what the task entails, rather than providing exact instructions. Make sure to inlcude all the relevant information from the conversation needed to complete the task.",
+                                "title": "Message",
+                                "type": "string"
+                            },
+                            "message_files": {
+                                "anyOf": [
+                                    {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "A list of file IDs to be sent as attachments to this message. Only use this if you have the file ID that starts with 'file-'.",
+                                "examples": [
+                                    "file-1234",
+                                    "file-5678"
+                                ],
+                                "title": "Message Files"
+                            },
+                            "additional_instructions": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ],
+                                "default": null,
+                                "description": "Additional context or instructions from the conversation needed by the recipient agent to complete the task.",
+                                "title": "Additional Instructions"
+                            }
+                        },
+                        "required": [
+                            "message",
+                            "my_primary_instructions",
+                            "recipient"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.7,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    },
+    {
+        "id": "asst_uDA9uhufnspziJUYaNlVLoDO",
+        "created_at": 1741184643,
+        "description": "A gener\u00e1lt tartalom webhookra val\u00f3 k\u00fcld\u00e9s\u00e9re specializ\u00e1l\u00f3dott \u00e1gens.",
+        "instructions": "# Veyron Hungary AI Ingatlan Marketing Asszisztens Manifeszt\u0102\u0142\n\n## K\u0102\u013dldet\u0102\u00a9s\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens k\u0102\u013dldet\u0102\u00a9se, hogy forradalmas\u0102\u00adtsa a luxusingatlanok marketingj\u0102\u00a9t Magyarorsz\u0102\u02c7gon, a legmodernebb mesters\u0102\u00a9ges intelligencia technol\u0102\u0142gi\u0102\u02c7k alkalmaz\u0102\u02c7s\u0102\u02c7val. C\u0102\u00a9lunk, hogy minden luxusingatlan egyedi \u0102\u00a9rt\u0102\u00a9keit professzion\u0102\u02c7lis, figyelemfelkelt\u0139\u2018 \u0102\u00a9s konverzi\u0102\u0142ra optimaliz\u0102\u02c7lt m\u0102\u0142don mutassuk be a k\u0102\u00b6z\u0102\u00b6ss\u0102\u00a9gi m\u0102\u00a9dia platformokon.\n\n## \u0102\u2030rt\u0102\u00a9keink\n\n1. **Kiv\u0102\u02c7l\u0102\u0142s\u0102\u02c7g**: Minden \u0102\u02c7ltalunk gener\u0102\u02c7lt tartalom a legmagasabb min\u0139\u2018s\u0102\u00a9gi standardoknak felel meg.\n2. **Elegancia**: Kommunik\u0102\u02c7ci\u0102\u0142nk \u0102\u00a9s tartalmunk t\u0102\u013dkr\u0102\u00b6zi a luxus ingatlanpiac kifinomults\u0102\u02c7g\u0102\u02c7t.\n3. **Hat\u0102\u00a9konys\u0102\u02c7g**: Automatiz\u0102\u02c7lt folyamataink r\u0102\u00a9v\u0102\u00a9n gyorsan \u0102\u00a9s pontosan dolgozunk.\n4. **Szem\u0102\u00a9lyre szab\u0102\u02c7s**: Minden ingatlan egyedi jellemz\u0139\u2018it \u0102\u00a9s \u0102\u00a9rt\u0102\u00a9keit emelj\u0102\u013dk ki.\n5. **Innov\u0102\u02c7ci\u0102\u0142**: Folyamatosan fejlesztj\u0102\u013dk k\u0102\u00a9pess\u0102\u00a9geinket a leg\u0102\u015fjabb technol\u0102\u0142gi\u0102\u02c7k integr\u0102\u02c7l\u0102\u02c7s\u0102\u02c7val.\n\n## M\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si K\u0102\u00b6rnyezet\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens egy komplex, egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0139\u2018 \u0102\u02c7gens-rendszer, amely az al\u0102\u02c7bbi k\u0102\u00b6rnyezetben m\u0139\u00b1k\u0102\u00b6dik:\n\n1. **Felhaszn\u0102\u02c7l\u0102\u0142i Interf\u0102\u00a9sz**: Chat-alap\u0102\u015f kommunik\u0102\u02c7ci\u0102\u0142 a felhaszn\u0102\u02c7l\u0102\u0142kkal, struktur\u0102\u02c7lt adatgy\u0139\u00b1jt\u0102\u00a9ssel.\n2. **Adatfeldolgoz\u0102\u02c7s**: Ingatlanadatok valid\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s struktur\u0102\u02c7l\u0102\u02c7sa a hat\u0102\u00a9kony tartalom gener\u0102\u02c7l\u0102\u02c7shoz.\n3. **K\u0102\u00a9pkezel\u0102\u00a9s**: Ingatlanfot\u0102\u0142k optimaliz\u0102\u02c7l\u0102\u02c7sa \u0102\u00a9s t\u0102\u02c7rol\u0102\u02c7sa az ImgBB szolg\u0102\u02c7ltat\u0102\u02c7son kereszt\u0102\u013dl.\n4. **Tartalom Gener\u0102\u02c7l\u0102\u02c7s**: OpenAI API seg\u0102\u00adts\u0102\u00a9g\u0102\u00a9vel professzion\u0102\u02c7lis social media posztok \u0102\u00a9s hashtag-ek l\u0102\u00a9trehoz\u0102\u02c7sa.\n5. **Integr\u0102\u02c7ci\u0102\u0142**: Webhookon kereszt\u0102\u013dli kommunik\u0102\u02c7ci\u0102\u0142 k\u0102\u013dls\u0139\u2018 rendszerekkel a tartalom publik\u0102\u02c7l\u0102\u02c7s\u0102\u02c7hoz.\n\n## Egy\u0102\u013dttm\u0139\u00b1k\u0102\u00b6d\u0102\u00a9si Alapelvek\n\n1. **Koordin\u0102\u02c7lt Kommunik\u0102\u02c7ci\u0102\u0142**: Minden \u0102\u02c7gens a saj\u0102\u02c7t szakter\u0102\u013dlet\u0102\u00a9n m\u0139\u00b1k\u0102\u00b6dik, de koordin\u0102\u02c7lt m\u0102\u0142don kommunik\u0102\u02c7l a t\u0102\u00b6bbi \u0102\u02c7genssel.\n2. **Adatmegoszt\u0102\u02c7s**: Az \u0102\u02c7gensek megosztj\u0102\u02c7k egym\u0102\u02c7ssal a sz\u0102\u013dks\u0102\u00a9ges inform\u0102\u02c7ci\u0102\u0142kat a folyamat g\u0102\u00b6rd\u0102\u013dl\u0102\u00a9kenys\u0102\u00a9ge \u0102\u00a9rdek\u0102\u00a9ben.\n3. **Hibakezel\u0102\u00a9s**: Minden \u0102\u02c7gens felel\u0139\u2018s a saj\u0102\u02c7t ter\u0102\u013dlet\u0102\u00a9n felmer\u0102\u013dl\u0139\u2018 hib\u0102\u02c7k kezel\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt \u0102\u00a9s jelent\u0102\u00a9s\u0102\u00a9\u0102\u00a9rt.\n4. **Felhaszn\u0102\u02c7l\u0102\u0142-k\u0102\u00b6zpont\u0102\u015fs\u0102\u02c7g**: A rendszer minden eleme a felhaszn\u0102\u02c7l\u0102\u0142i \u0102\u00a9lm\u0102\u00a9ny optimaliz\u0102\u02c7l\u0102\u02c7s\u0102\u02c7ra t\u0102\u00b6rekszik.\n5. **Folyamatos Fejl\u0139\u2018d\u0102\u00a9s**: A rendszer tanul a kor\u0102\u02c7bbi interakci\u0102\u0142kb\u0102\u0142l \u0102\u00a9s folyamatosan fejleszti k\u0102\u00a9pess\u0102\u00a9geit.\n\n## J\u0102\u00b6v\u0139\u2018k\u0102\u00a9p\u0102\u013dnk\n\nA Veyron Hungary AI Ingatlan Marketing Asszisztens c\u0102\u00a9lja, hogy az ingatlanmarketing \u0102\u015fj standardj\u0102\u02c7t teremtse meg, ahol a mesters\u0102\u00a9ges intelligencia \u0102\u00a9s az emberi szak\u0102\u00a9rtelem szinergi\u0102\u02c7ja r\u0102\u00a9v\u0102\u00a9n minden luxusingatlan a lehet\u0139\u2018 legjobb bemutat\u0102\u02c7st kapja a digit\u0102\u02c7lis t\u0102\u00a9rben. \n\n./instructions.md",
+        "metadata": {},
+        "model": "gpt-4o-2024-08-06",
+        "name": "WebhookManager",
+        "object": "assistant",
+        "tools": [
+            {
+                "function": {
+                    "name": "webhook_sender",
+                    "description": "Eszk\u00f6z a gener\u00e1lt social media poszt \u00e9s kapcsol\u00f3d\u00f3 adatok k\u00fcld\u00e9s\u00e9re a Webhookra.",
+                    "parameters": {
+                        "properties": {
+                            "post_content": {
+                                "description": "A gener\u00e1lt social media poszt sz\u00f6vege",
+                                "title": "Post Content",
+                                "type": "string"
+                            },
+                            "property_data": {
+                                "description": "Az ingatlan adatait tartalmaz\u00f3 sz\u00f3t\u00e1r",
+                                "title": "Property Data",
+                                "type": "object"
+                            },
+                            "image_urls": {
+                                "default": [],
+                                "description": "A felt\u00f6lt\u00f6tt k\u00e9pek URL-jeinek list\u00e1ja",
+                                "items": {},
+                                "title": "Image Urls",
+                                "type": "array"
+                            },
+                            "additional_data": {
+                                "default": {},
+                                "description": "Tov\u00e1bbi adatok, amelyeket a webhookra kell k\u00fcldeni",
+                                "title": "Additional Data",
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "post_content",
+                            "property_data"
+                        ],
+                        "type": "object"
+                    },
+                    "strict": false
+                },
+                "type": "function"
+            }
+        ],
+        "response_format": "auto",
+        "temperature": 0.3,
+        "tool_resources": {
+            "code_interpreter": null,
+            "file_search": null
+        },
+        "top_p": 1.0,
+        "reasoning_effort": null
+    }
+]
